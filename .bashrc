@@ -117,3 +117,4 @@ if ! shopt -oq posix; then
 fi
 
 source ~/shell/exercism_completion.bash
+source ~/shell/go.bash
