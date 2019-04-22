@@ -10,4 +10,5 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 set expandtab ts=4 sw=4 ai
-set colorcolumn=80
+"set colorcolumn=80
+"highlight ColorColumn ctermbg=

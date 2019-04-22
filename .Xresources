@@ -11,7 +11,7 @@ urxvt.letterSpace: -1
 urxvt.saveLines: 1000000
 
 !! Perl extensions
-urxvt.perl-ext-common: default,matcher,font-size
+urxvt.perl-ext-common: default,matcher,font-size,clipboard
 !! Open urls in browser with Control-Click
 urxvt.urlLauncher: /usr/bin/firefox
 urxvt.matcher.button: C1
@@ -46,3 +46,16 @@ URxvt.color13: rgb:AD/7F/A8
 URxvt.color14: rgb:34/E2/E2
 URxvt.color15: rgb:EE/EE/EC
 URxvt.colorBD: rgb:ff/ff/ff
+
+!! Clipboard
+!!URxvt.perl-ext-common: default,clipboard
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.copyCommand: xsel -ib
+URxvt.pasteCommand: xsel -ob
+
+URxvt.iso14755: true
+URxvt.iso14755_52: false
